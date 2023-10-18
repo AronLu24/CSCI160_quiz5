@@ -1,0 +1,57 @@
+Two Strings:
+
+Time Complexity:
+
+1. The function iterates through the characters of the first string, s1, and adds each character to the set1. The size of s1 is denoted as n.
+
+ - The time complexity of this step is O(n).
+2. The function then iterates through the characters of the second string, s2, and checks whether each character is present in `set1.
+
+ - For each character in s2, it performs a constant-time lookup operation in set1.
+ - The size of s2 is denoted as m.
+3. Since step 2 involves a loop over the characters of s2, the overall time complexity of the function is O(m), where m is the length of the second string.
+
+Overall, the time complexity of the "twoStrings" function is O(n + m), where n and m are the lengths of the input strings s1 and s2, respectively.
+
+Space Complexity:
+
+1. The function uses an unordered set called set1 to store unique characters from the first string, s1. The space required by the set depends on the number of unique characters in s1.
+
+ - In the worst case, where all characters in s1 are unique, the space complexity is O(n).
+2. Other than the set, the function uses a few additional variables for iteration and storing results. These variables have constant space complexity.
+
+Overall, the space complexity of the "twoStrings" function is O(n), where n is the length of the first string, s1.
+
+To summarize:
+
+ - Time Complexity: O(n + m) where n is the length of s1, and m is the length of s2.
+ - Space Complexity: O(n) where n is the length of s1.
+
+
+
+Mars Exploration:
+
+Time Complexity:
+
+1. The function iterates through the characters of the input string s.
+
+ - The size of the input string is denoted as n.
+2. Within the loop, the function compares each character in s to the corresponding character in the "SOS" pattern.
+
+- The pattern "SOS" is of constant length (3 characters).
+3. The loop iterates through all characters in s.
+
+The time complexity of the function is determined by the number of characters in the input string s, which is O(n).
+
+Space Complexity:
+
+1. The function uses a few variables for iteration and counting, which have constant space complexity.
+
+2. It doesn't use any data structures that grow with the input size. The "SOS" pattern is a constant-sized string.
+
+The space complexity of the function is O(1) because it uses a constant amount of space that doesn't depend on the input size.
+
+To summarize:
+
+ - Time Complexity: O(n), where n is the length of the input string s.
+ - Space Complexity: O(1), constant space complexity.
